@@ -63,6 +63,9 @@ Make move:
 
 ## Possible Future Enhancements
 
-How would you improve your finished application? What would you do first?  
-Would asynchronous events be useful? If so, how would you use them? 
+Here are some possible discussion points for the interview:
+
+1. How would you improve your finished application? What would you do first?  
+2. Would asynchronous events be useful? If so, how would you use them?
+3. How difficult would it be to play different games with this API? e.g. chess, connect 4, etc. What changes would be needed? 
 
