@@ -22,12 +22,6 @@
         <version>2.2.1.RELEASE</version>
     </parent>
 
-    <dependencyManagement>
-    </dependencyManagement>
-
-    <build>
-    </build>
-    
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>

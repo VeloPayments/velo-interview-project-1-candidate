@@ -65,11 +65,6 @@ public class GamesController {
 		// TODO: Make move - call gameService
 		
 		// Create response
-		URI location = ServletUriComponentsBuilder
-				.fromCurrentRequest()
-				.replacePath("/games/{id}")
-				.buildAndExpand(gameId).toUri();
-		
 		GameDTO gameDTO = new GameDTO();
 		
 		// TODO: set properties of gameDTO

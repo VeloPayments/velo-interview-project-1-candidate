@@ -19,7 +19,7 @@ public class Game {
     
     // TODO: Add attributes to store a game state
     //   e.g.
-    //    - whos turns is it
+    //    - which player's turn is it next
     //    - current board contents i.e. cells
     
 }

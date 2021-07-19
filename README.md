@@ -4,7 +4,9 @@
 
 ## Overview
 We'd like you to create a Spring Boot Application to play games of Noughts and Crosses aka Tic Tac Toe.  
-The idea is to show us your coding and design skills, and give us some code to discuss in the walkthrough interview.   
+The idea is to show us your coding, design and documentation skills, and give us some code to discuss in the walkthrough interview.  
+
+Note: There will be no AI or Computer player involved - the application should allow two human players to make moves and play a game. 
   
 The repo you've cloned gives you a starting point, and various TODO markers are in place for you to fill in the gaps.  
 We'd like to see what production logic you put in place, and also the tests you decide to implement.  
@@ -18,7 +20,7 @@ The main functionality to cover is:
 ### Make move:  POST /games/{gameId}/moves  
 - Make a move in an existing game, and return the new game board state.    
 - This will be called multiple times for a particular game, once per move.  
-- Implementing win logic is not mandatory.
+- Implementing win logic is optional, but you can attempt it if you have time.
 
 ## Submitting your solution
 To submit your solution, please zip your project folder and email it to stuart.martin@velopayments.com
