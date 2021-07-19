@@ -6,7 +6,6 @@
     <groupId>com.velopayments</groupId>
     <artifactId>velo-interview-project-1</artifactId>
     <version>2.27.${revision}</version>
-    <packaging>pom</packaging>
 
     <name>velo-interview-project-1</name>
     <description>Velo Interview Project 1</description>
@@ -14,6 +13,7 @@
     <properties>
         <!-- Sane default when no revision property is passed in from the commandline -->
         <revision>0-SNAPSHOT</revision>
+        <java.version>11</java.version>
     </properties>
 
     <parent>
@@ -21,7 +21,7 @@
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.2.1.RELEASE</version>
     </parent>
-
+    
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -47,6 +47,7 @@
                     <artifactId>junit-vintage-engine</artifactId>
                 </exclusion>
             </exclusions>
+            <scope>test</scope>
         </dependency>
 
         <dependency>
