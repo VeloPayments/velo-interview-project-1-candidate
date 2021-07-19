@@ -23,15 +23,16 @@ The main functionality to cover is:
 - Implementing win logic is optional, but you can attempt it if you have time.
 
 ## Submitting your solution
-To submit your solution, please zip your project folder and email it to stuart.martin@velopayments.com
+To submit your solution, please zip your project folder and email it to stuart.martin@velopayments.com.  
+Alternatively, please fork the repo on github and email the link to your modified version to stuart.martin@velopayments.com.
 
 ## Repo notes
-The repo comes with an initial Spring Boot application, with a Controller and Service.  
+The repo comes with an initial Spring Boot application, with a Controller and Service, and some POJO classes for the API.  
+You can use and modify these, or write your own, and add any new classes as required.  
 "TODO" markers are in place to show where you need to fill in gaps in the code.  
-You can use this or write your own, and add any new classes as required.  
+
 To start up the application, please run the "VeloInterviewApplication" main block in your IDE.  
 This should startup the application and listen on port 8080.  
-
 
 Notes:
 - The project is setup to use H2 database. We would normally only use this for testing, but it's OK to use that for runtime also for this exercise. 
@@ -57,3 +58,11 @@ Make move:
 
 - the game id here would need to be a valid gameId obtained from a 'new game' call
 - the json in the body would need to match your chosen format for a move
+
+
+
+## Possible Future Enhancements
+
+How would you improve your finished application? What would you do first?  
+Would asynchronous events be useful? If so, how would you use them? 
+
