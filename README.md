@@ -24,7 +24,6 @@ The main functionality to cover is:
 
 ## Submitting your solution
 To submit your solution, please zip your project folder and email it to stuart.martin@velopayments.com.  
-Alternatively, please fork the repo on github and email the link to your modified version to stuart.martin@velopayments.com.
 
 ## Repo notes
 The repo comes with an initial Spring Boot application, with a Controller and Service, and some POJO classes for the API.  
