@@ -6,8 +6,6 @@
 We'd like you to create a Spring Boot Application to play games of Noughts and Crosses aka Tic Tac Toe.  
 The idea is to show us your coding, design and documentation skills, and give us some code to discuss in the walkthrough interview.  
 
-Note: There will be no AI or Computer player involved - the application should allow two human players to make moves and play a game. 
-  
 The repo you've cloned gives you a starting point, and various TODO markers are in place for you to fill in the gaps.  
 We'd like to see what production logic you put in place, and also the tests you decide to implement.  
 
@@ -21,6 +19,12 @@ The main functionality to cover is:
 - Make a move in an existing game, and return the new game board state.    
 - This will be called multiple times for a particular game, once per move.  
 - Implementing win logic is optional, but you can attempt it if you have time.
+
+## Constraints and Timescales
+- There will be no AI or Computer player involved - the application should allow two human players to make moves and play a game.
+- Please constrain your solution to play Tic Tac Toe on a 3x3 board  
+- It’s intended that this exercise should take from 2 to 4 hours to complete. Please constrain your design to allow the coding to be completed within that timescale.
+- We'd rather you end up with unfinished tests than spend 4+ hours of your time on this exercise. 
 
 ## Submitting your solution
 To submit your solution, please zip your project folder and email it to stuart.martin@velopayments.com.  
@@ -39,7 +43,7 @@ Notes:
 ## Testing
 There are several ideas for test classes you may wish to write in the "src/test/java" folder.  
 Please fill these out as needed, and add any others you may need.  
-If you run out of time for the exercise, feel free to add TODO marker comments for extra test cases you'd like to cover
+Remember the timescales mentioned above - if you run out of time, feel free to add TODO comments for any extra test cases you'd like to cover.
 
 
 ## Sample Curl commands
@@ -66,5 +70,4 @@ Here are some possible discussion points for the interview:
 
 1. How would you improve your finished application? What would you do first?  
 2. Would asynchronous events be useful? If so, how would you use them?
-3. How difficult would it be to play different games with this API? e.g. chess, connect 4, etc. What changes would be needed? 
 
