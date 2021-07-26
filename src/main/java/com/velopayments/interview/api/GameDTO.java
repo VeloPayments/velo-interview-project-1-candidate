@@ -1,26 +1,19 @@
 package com.velopayments.interview.api;
 
+import java.util.UUID;
+
 public class GameDTO {
-    
-    private String id;
-    private String url;
-    
+
+    private UUID id;
+
     // TODO: Add a representation of the game "state" (board) to return to the caller
 
-    public String getId() {
+    public UUID getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(UUID id) {
         this.id = id;
-    }
-
-    public String getUrl() {
-        return url;
-    }
-
-    public void setUrl(String url) {
-        this.url = url;
     }
 
 }

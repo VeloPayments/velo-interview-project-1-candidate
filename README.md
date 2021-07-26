@@ -7,13 +7,13 @@ We'd like you to create a Spring Boot Application to play games of Noughts and C
 The idea is to show us your coding, design and documentation skills, and give us some code to discuss in the walkthrough interview.  
 
 The repo you've cloned gives you a starting point, and various TODO markers are in place for you to fill in the gaps.  
-We'd like to see what production logic you put in place, and also the tests you decide to implement.  
+We'd like to see what logic you put in place, and also the tests you decide to implement. Tests are very important to us! :-) 
 
 The main functionality to cover is:
 
 ### New game: 	POST /games
 
-- Create a new game and return a new unique game id
+- Create a new game and return the fresh game state including the game id
 
 ### Make move:  POST /games/{gameId}/moves  
 - Make a move in an existing game, and return the new game board state.    
@@ -34,15 +34,19 @@ The repo comes with an initial Spring Boot application, with a Controller and Se
 You can use and modify these, or write your own, and add any new classes as required.  
 "TODO" markers are in place to show where you need to fill in gaps in the code.  
 
-To start up the application, please run the "VeloInterviewApplication" main block in your IDE.  
-This should startup the application and listen on port 8080.  
+To test your application you can run the integration test in your IDE:
+    
+    com.velopayments.interview.integration.FullEndToEndTest
+
+This test should be expanded on to test multiple moves etc
 
 Notes:
 - The project is setup to use H2 database. We would normally only use this for testing, but it's OK to use that for runtime also for this exercise. 
 
 ## Testing
-There are several ideas for test classes you may wish to write in the "src/test/java" folder.  
-Please fill these out as needed, and add any others you may need.  
+There are several ideas for test classes you may wish to write in the "src/test/java" folder.
+Please fill these out as needed, and add any others you may need.
+Ideally we will see unit tests at the service level, mock mvc tests for the controller including error conditions and at least one integration or "end to end" test covering the happy path.
 Remember the timescales mentioned above - if you run out of time, feel free to add TODO comments for any extra test cases you'd like to cover.
 
 

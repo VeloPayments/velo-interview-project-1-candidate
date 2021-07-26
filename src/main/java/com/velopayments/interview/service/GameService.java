@@ -14,27 +14,27 @@ import java.util.UUID;
 @Transactional
 public class GameService {
     private static final Logger LOG = LoggerFactory.getLogger(GameService.class);
-    
+
     @Autowired
     GameRepository gameRepository;
-    
-    public UUID createGame() {
-        
+
+    public Game createGame() {
+
         // TODO: Implement this
-        //   This should use the gameRepository object for persistence 
-        
+        //   This should use the gameRepository object for persistence
+
         return null;
     }
 
     public Game makeMove(UUID gameId) {
-        
+
         // TODO: Implement this.
         //   Note: You will need to add one or more parameters to this method, with the details of the move
         //   This should use the gameRepository object for persistence
         //   It should return the new game state to the caller
-        
+
         // TODO: Optional: Implement 'win' logic
-        
+
         return null;
     }
 
