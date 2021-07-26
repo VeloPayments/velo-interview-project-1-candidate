@@ -16,10 +16,18 @@ public class Game {
     @GeneratedValue(strategy=GenerationType.AUTO)
     private UUID id;
 
-    
+
     // TODO: Add attributes to store a game state
     //   e.g.
     //    - which player's turn is it next
     //    - current board contents i.e. cells
-    
+
+
+    public UUID getId() {
+        return id;
+    }
+
+    public void setId(UUID id) {
+        this.id = id;
+    }
 }

@@ -1,5 +1,6 @@
 package com.velopayments.interview.integration;
 
+import com.velopayments.interview.api.GameDTO;
 import com.velopayments.interview.controller.GamesController;
 import com.velopayments.interview.repository.GameRepository;
 import org.junit.jupiter.api.BeforeEach;
@@ -8,6 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.boot.web.server.LocalServerPort;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.ActiveProfiles;
 
 /**
@@ -30,24 +33,18 @@ public class FullEndToEndTest {
     @Autowired
     private GameRepository gameRepository;
 
-    @LocalServerPort
-    private int port; // The random port that our backend is listening on
-
     // Note: Wiremock could be used if any external services were being communicated with - there are none for now
 
-    @BeforeEach
-    public void setUp() {
-
-    }
 
     @Test
     public void fullEndToEndTest_happyPath() throws Exception {
 
-        // Check games list is initially empty
-
         // Create game
+        ResponseEntity<GameDTO> createResponse = restTemplate.postForEntity("/games", null, GameDTO.class);
+
 
         // Check game is there - and maybe check game is setup correctly?
+        assert createResponse.getStatusCode() == HttpStatus.CREATED;
 
         // Make a move
 
@@ -55,5 +52,5 @@ public class FullEndToEndTest {
 
 
     }
-    
+
 }
